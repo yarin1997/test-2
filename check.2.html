@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work Flex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        function delete() {}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first {
+            width: 90vw;
+            height: 70vh;
+            background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+            opacity: 1;
+            flex-direction: column;
+        }
+
+        div h1 {
+            font: normal normal normal 10em Satisfy;
+            text-align: center;
+            color: #fff;
+        }
+
+        div h2 {
+            font: normal normal normal 3em Varela Round;
+            text-align: center;
+            color: #fff;
+        }
+
+        div p {
+            font: normal normal normal 1rem Varela Round;
+            text-align: center;
+            color: #fff;
+        }
+
+
+        @media (max-width:650px) {
+            .center {
+                width: 100vw;
+                height: 100vh;
+                margin: 0 0;
+            }
+
+            .info {
+                flex-direction: column-reverse;
+
+            }
+
+            .input {
+                margin: 10px;
+                order: 1;
+            }
+
+            .button {
+                margin: 20px;
+                order: 2;
+            }
+
+
+
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .button {
+            background-color: rgb(48, 99, 156);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            order: 1;
+        }
+
+        .input {
+            background-color: rgb(219, 208, 208);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            margin-right: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="center first">
+            <h1>Hero & now</h1>
+            <h2>let do it</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, illo. </p>
+            <div class="info">
+                <input class="input" value="Name">
+                <input class="input" value="Email">
+                <button class="button">
+                    send
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
